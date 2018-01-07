@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ddircz.sandbox.SubmitPlace">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/nameLocation"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name of Location"
+            android:inputType="textCapSentences|textAutoCorrect" />
+
+        <com.example.ddircz.sandbox.MultiSpinner
+            android:id="@+id/multispinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/amenities"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageToUpload"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/buttonUploadImage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Upload" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.45"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.45"
+                android:text="Cancel" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="My Place" />
+        <item
+            android:id="@+id/Filter"
+            android:icon="@drawable/ic_003_filter"
+            android:title="Filters" />
+        <item
+            android:id="@+id/Lucky"
+            android:icon="@drawable/ic_001_double_dice"
+            android:title="I'm Feeling Lucky" />
+        <item
+            android:id="@+id/Settings"
+            android:icon="@drawable/ic_002_settings_work_tool"
+            android:title="Settings" />
+    </group>
+</menu>

@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="5"
+        android:entries="@array/query_limits"
+        android:entryValues="@array/query_values"
+        android:key="example_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/limit_queries"
+        android:title="@string/query_results" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="statistics_switch"
+        android:summary="Send statistics of usage to the UDiscover development team?"
+        android:title="Usage Statistics" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/test_user"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/edit_display_name" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <Preference
+        android:key="pref_static_field_key"
+        android:selectable="false"
+        android:persistent="false"
+        android:title="Experiencing a bug or have feedback?"
+        android:summary="Contact the dev team at:\ndircz009@umn.edu."/>
+
+</PreferenceScreen>
